@@ -62,6 +62,7 @@ class App(ttk.Frame):
 
         self.valueEntry = ttk.Entry(
             self.mainFrame, font=('Ivy 8 bold'), justify="center")
+        self.valueEntry.insert(0, 0)
         self.valueEntry.grid(row=1, column=0)
 
         self.fromLabel = ttk.Label(
