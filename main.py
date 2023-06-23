@@ -3,6 +3,11 @@ from tkinter import ttk
 
 
 class App(ttk.Frame):
+    def convert(self):
+        self.valueLabel = ttk.Label(
+            self.resultFrame, font=('Ivy 10 bold'), text="1,00 Dólar dos EUA = 0,91777082 Euro")
+        self.valueLabel.grid(row=0, column=0, padx=10, pady=10)
+
     def __init__(self, parent):
         ttk.Frame.__init__(self)
 
@@ -20,32 +25,35 @@ class App(ttk.Frame):
     def setupWidgets(self):
         # First Frame
         self.resultFrame = tkinter.LabelFrame(
-            self, text="Result Frame")
+            self, font=('Ivy 8 normal'), text="Result Frame")
         self.resultFrame.grid(row=0, column=0, sticky="NEWS", padx=20, pady=5)
 
-        self.valueLabel = ttk.Label(
-            self.resultFrame, text="1,00 Dólar dos EUA = 0,91777082 Euro")
+        self.valueLabel = ttk.Label(self.resultFrame, text="")
         self.valueLabel.grid(row=0, column=0, padx=10, pady=10)
 
         # Second Frame
         self.mainFrame = tkinter.LabelFrame(
-            self, text="Main Frame")
+            self, font=('Ivy 8 normal'), text="Main Frame")
         self.mainFrame.grid(row=1, column=0, sticky="NEWS", padx=20, pady=5)
 
-        self.valueLabel = ttk.Label(self.mainFrame, text="Value")
+        self.valueLabel = ttk.Label(
+            self.mainFrame, font=('Ivy 8 bold'), text="Value")
         self.valueLabel.grid(row=0, column=0, sticky="W")
 
-        self.valueEntry = ttk.Entry(self.mainFrame)
+        self.valueEntry = ttk.Entry(
+            self.mainFrame, font=('Ivy 8 bold'), justify="center")
         self.valueEntry.grid(row=1, column=0)
 
-        self.fromLabel = ttk.Label(self.mainFrame, text="From")
+        self.fromLabel = ttk.Label(
+            self.mainFrame, font=('Ivy 8 bold'), text="From")
         self.fromLabel.grid(row=0, column=1, sticky="W")
 
         self.fromMenu = ttk.OptionMenu(
             self.mainFrame, self.fromMenuVariable, *self.fromMenuList)
         self.fromMenu.grid(row=1, column=1)
 
-        self.toLabel = ttk.Label(self.mainFrame, text="To")
+        self.toLabel = ttk.Label(
+            self.mainFrame, font=('Ivy 8 bold'), text="To")
         self.toLabel.grid(row=0, column=2, sticky="W")
 
         self.toMenu = ttk.OptionMenu(
@@ -56,7 +64,8 @@ class App(ttk.Frame):
             widget.grid_configure(padx=10, pady=2)
 
         # Third Frame
-        self.buttonConvert = ttk.Button(self, text="Convert")
+        self.buttonConvert = ttk.Button(
+            self, text="Convert", style="Accent.TButton", command=self.convert)
         self.buttonConvert.grid(
             row=2, column=0, sticky="NEWS", padx=20, pady=10)
 
