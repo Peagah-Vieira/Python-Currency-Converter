@@ -1,4 +1,4 @@
-[![pt-br](https://img.shields.io/badge/lang-pt--br-green.svg)](https://github.com/Peagah-Vieira/Python-Data-Entry/blob/main/README-ptBR.md)
+[![pt-br](https://img.shields.io/badge/lang-pt--br-green.svg)](https://github.com/Peagah-Vieira/Python-Currency-Converter/blob/main/README-ptBR.md)
 
 # Python Currency Converter
 
@@ -13,14 +13,14 @@ Project carried out to convert currencies using API and graphical interface tkin
 
 ## Demonstration
 
-Insert a gif or a link to a demo
+![Currency Converter](https://github.com/Peagah-Vieira/Python-Currency-Converter/assets/105545343/bc39963d-9c56-4fc7-a932-cf78489a944d)
 
 ## Running locally
 
 Clone the project
 
 ```bash
-  git clone https://link-to-project
+  git clone https://github.com/Peagah-Vieira/Python-Currency-Converter
 ```
 
 Install requests library
