@@ -11,14 +11,14 @@ Projeto realizado para converter moedas utilizando API e interface gráfica tkin
 
 ## Demonstração
 
-Insira um gif ou um link de alguma demonstração
+![Currency Converter](https://github.com/Peagah-Vieira/Python-Currency-Converter/assets/105545343/bc39963d-9c56-4fc7-a932-cf78489a944d)
 
 ## Rodando localmente
 
 Clone o projeto
 
 ```bash
-  git clone https://link-para-o-projeto
+  git clone https://github.com/Peagah-Vieira/Python-Currency-Converter
 ```
 
 Instale a biblioteca requests
